@@ -17,3 +17,9 @@ Location
 Playlist
 - suggest a playlist for a user based off the services that are connected
 - Curate a playlist based of the location/category/Mood
+
+
+<b>Members -
+1)Arthur Burgin Jr<br>
+2)Kathy Yin<br>
+3)Naresh Yerneni
