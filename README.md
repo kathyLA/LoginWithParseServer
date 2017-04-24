@@ -19,7 +19,8 @@ Playlist
 - Curate a playlist based of the location/category/Mood
 
 
-<b>Members -
+<b>Team -
+
 1)Arthur Burgin Jr<br>
 2)Kathy Yin<br>
 3)Naresh Yerneni
