@@ -17,8 +17,8 @@ The following **required** functionality is completed:
 - [ ] API Services
    - [ ] Setup Parse database with User class
    - [ ] User coming to our app for the first needs to be able to login using google/facebook. The user object should be saved to Parse.
-   - [ ] A user will need to be able to de-activate their a service from their account.
    - [ ] A user should be able to connect to multiple (more than 1) subscription/free music services securely.
+   - [ ] A user will need to be able to de-activate their a service from their account.
 - [ ] Playlists
    - [ ] Pull in all the playlists and songs within the playlists from the services the user has subscribed to.
    - [ ] Have a in app music player
