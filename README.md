@@ -14,7 +14,7 @@ can be entered such as work, home or the gym then a playlist of music is display
 
 The following **required** functionality is completed:
 
-- [ ] Setup Services
+- [ ] API Services
    - [ ] Setup Parse database with User class
    - [ ] User coming to our app for the first needs to be able to login using google/facebook. The user object should be saved to Parse.
    - [ ] A user will need to be able to de-activate their a service from their account.
