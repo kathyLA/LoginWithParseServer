@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EEFAE4E1EB668C000A1B791 /* LoginBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAE4D1EB668C000A1B791 /* LoginBackgroundViewController.swift */; };
+		1EEFAE501EB66DFB00A1B791 /* SignUpBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAE4F1EB66DFB00A1B791 /* SignUpBackgroundViewController.swift */; };
+		1EF31E5F1EB416B0005C5483 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF31E5E1EB416B0005C5483 /* LoginViewController.swift */; };
+		1EF31F0B1EB5CC8B005C5483 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EF31F0A1EB5CC8B005C5483 /* GoogleService-Info.plist */; };
+		353802295BE3D2AB0CFA347E /* Pods_MyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E7DD6A0BE60316BD2F07C /* Pods_MyMusic.framework */; };
 		4DC3974A1EB0254100FCBA4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC397491EB0254100FCBA4C /* AppDelegate.swift */; };
 		4DC3974C1EB0254100FCBA4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3974B1EB0254100FCBA4C /* ViewController.swift */; };
 		4DC3974F1EB0254100FCBA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC3974D1EB0254100FCBA4C /* Main.storyboard */; };
@@ -18,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CAE3803DDE08748209FDF98 /* Pods-MyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMusic/Pods-MyMusic.release.xcconfig"; sourceTree = "<group>"; };
+		1EEFAE4D1EB668C000A1B791 /* LoginBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBackgroundViewController.swift; sourceTree = "<group>"; };
+		1EEFAE4F1EB66DFB00A1B791 /* SignUpBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpBackgroundViewController.swift; path = ../SignUpBackgroundViewController.swift; sourceTree = "<group>"; };
+		1EF31E5E1EB416B0005C5483 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1EF31F0A1EB5CC8B005C5483 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C0E7DD6A0BE60316BD2F07C /* Pods_MyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC397461EB0254100FCBA4C /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC397491EB0254100FCBA4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DC3974B1EB0254100FCBA4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +39,7 @@
 		4DC3975B1EB0260B00FCBA4C /* PlayList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayList.storyboard; sourceTree = "<group>"; };
 		4DC3975D1EB0262000FCBA4C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		4DC3975F1EB030C700FCBA4C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		D0A9F93D71694E909D91515E /* Pods-MyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMusic/Pods-MyMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353802295BE3D2AB0CFA347E /* Pods_MyMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +59,8 @@
 			children = (
 				4DC397481EB0254100FCBA4C /* MyMusic */,
 				4DC397471EB0254100FCBA4C /* Products */,
+				CF7E08CF2F0415C93446345C /* Pods */,
+				ADBA086EEFFB5D8587F1577C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +75,7 @@
 		4DC397481EB0254100FCBA4C /* MyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				1EF31F0A1EB5CC8B005C5483 /* GoogleService-Info.plist */,
 				4DC397491EB0254100FCBA4C /* AppDelegate.swift */,
 				4DC3974B1EB0254100FCBA4C /* ViewController.swift */,
 				4DC3974D1EB0254100FCBA4C /* Main.storyboard */,
@@ -69,8 +85,28 @@
 				4DC3975B1EB0260B00FCBA4C /* PlayList.storyboard */,
 				4DC3975D1EB0262000FCBA4C /* Login.storyboard */,
 				4DC3975F1EB030C700FCBA4C /* Settings.storyboard */,
+				1EEFAE4F1EB66DFB00A1B791 /* SignUpBackgroundViewController.swift */,
+				1EF31E5E1EB416B0005C5483 /* LoginViewController.swift */,
+				1EEFAE4D1EB668C000A1B791 /* LoginBackgroundViewController.swift */,
 			);
 			path = MyMusic;
+			sourceTree = "<group>";
+		};
+		ADBA086EEFFB5D8587F1577C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0E7DD6A0BE60316BD2F07C /* Pods_MyMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF7E08CF2F0415C93446345C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9F93D71694E909D91515E /* Pods-MyMusic.debug.xcconfig */,
+				0CAE3803DDE08748209FDF98 /* Pods-MyMusic.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC397581EB0254100FCBA4C /* Build configuration list for PBXNativeTarget "MyMusic" */;
 			buildPhases = (
+				58130BA0E0D9A69AF7C3D7D2 /* [CP] Check Pods Manifest.lock */,
 				4DC397421EB0254000FCBA4C /* Sources */,
 				4DC397431EB0254000FCBA4C /* Frameworks */,
 				4DC397441EB0254000FCBA4C /* Resources */,
+				847886D2F7F80D86861E8300 /* [CP] Embed Pods Frameworks */,
+				BD56D367DD0DFB28F0ACD84D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +144,7 @@
 				TargetAttributes = {
 					4DC397451EB0254000FCBA4C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V4YF8V8WZ6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,17 +178,69 @@
 				4DC397601EB030C700FCBA4C /* Settings.storyboard in Resources */,
 				4DC3975E1EB0262000FCBA4C /* Login.storyboard in Resources */,
 				4DC3975C1EB0260B00FCBA4C /* PlayList.storyboard in Resources */,
+				1EF31F0B1EB5CC8B005C5483 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58130BA0E0D9A69AF7C3D7D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		847886D2F7F80D86861E8300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMusic/Pods-MyMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD56D367DD0DFB28F0ACD84D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMusic/Pods-MyMusic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DC397421EB0254000FCBA4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF31E5F1EB416B0005C5483 /* LoginViewController.swift in Sources */,
+				1EEFAE501EB66DFB00A1B791 /* SignUpBackgroundViewController.swift in Sources */,
 				4DC3974C1EB0254100FCBA4C /* ViewController.swift in Sources */,
+				1EEFAE4E1EB668C000A1B791 /* LoginBackgroundViewController.swift in Sources */,
 				4DC3974A1EB0254100FCBA4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,25 +362,31 @@
 		};
 		4DC397591EB0254100FCBA4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A9F93D71694E909D91515E /* Pods-MyMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V4YF8V8WZ6;
 				INFOPLIST_FILE = MyMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yerneni.MyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4DC3975A1EB0254100FCBA4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CAE3803DDE08748209FDF98 /* Pods-MyMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V4YF8V8WZ6;
 				INFOPLIST_FILE = MyMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yerneni.MyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -311,6 +409,7 @@
 				4DC3975A1EB0254100FCBA4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

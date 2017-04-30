@@ -7,15 +7,39 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import Parse
+import Google
+import GoogleSignIn
+import ParseFacebookUtilsV4
+import ParseTwitterUtils
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+       FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         // Override point for customization after application launch.
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "com.yerneni.MyMusic"
+            $0.server = "https://mymusic2017.herokuapp.com/parse"
+            $0.clientKey = "5IgO4kEL53"
+        }
+        
+        Parse.initialize(with: configuration)
+        FBSDKSettings.setAppID("1414535481941160")
+        PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
+        PFTwitterUtils.initialize(withConsumerKey: "l8wP09DXjmpAilNYKb8WCLe0b", consumerSecret: "fMZ3HD5vzOhKVfdWSqXRnGBYGFXzFkERIHU9XEYkvpGGmpTsLG")
+        let nib = UIStoryboard.init(name: "Login", bundle: nil)
+        window?.rootViewController = nib.instantiateViewController(withIdentifier: "LoginViewController")
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -35,12 +59,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options) ||
+            GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
 
 }
 
